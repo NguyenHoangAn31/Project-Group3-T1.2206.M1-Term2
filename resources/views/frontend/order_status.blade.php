@@ -49,7 +49,11 @@
                         @endif
                         <p>Status : {{$items->status }}</p>
                         <p>Total : ${{$items->total}}</p>
-
+                        <form action="{{route('delete_order',$items->id)}}" method="post">
+                            @csrf
+                            @method("DELETE")
+                            <button>Delete Order</button>
+                        </form>
                     </td>
                 </tr>
             </tfoot>

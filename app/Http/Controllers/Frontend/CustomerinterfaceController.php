@@ -289,6 +289,7 @@ class CustomerinterfaceController extends Controller
         $comments = Comment::where('category_id', $iphone->category_id)
             ->where('product_id', $iphone->id)
             ->get()
+            ->reverse()
             ->map(function ($comment) {
                 $comment->diffForHumans = $comment->updated_at->diffForHumans();
                 return $comment;
@@ -469,7 +470,10 @@ class CustomerinterfaceController extends Controller
         $cart_product = $request->session()->get('cart');
         $order = new Order();
         $order->customer_id = $user->id;
+        $order->name = $request->name;
+        $order->email = $request->email;
         $order->address = $request->address . ' , ' . $request->ward . ' , ' . $request->district . ' , ' . $request->province;
+        $order->phone = $request->phone;
         $order->date = date('Y-m-d H:i:s', time());
         $order->status = 'processing';
         $order->discount_value = $request->discount_value;
@@ -533,6 +537,10 @@ class CustomerinterfaceController extends Controller
             ->get();
 
         return view('frontend/order_status', compact('status_product'));
+    }
+    public function delete_order($id_order){
+        $order = Order::findOrFail($id_order)->delete();
+        return redirect('frontend/order_status');
     }
 
 

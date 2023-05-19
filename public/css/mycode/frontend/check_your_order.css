@@ -63,17 +63,23 @@
     margin: 5px 0;
 }
 
-.order_status table tfoot .total a ,
+.order_status table tfoot .total button ,
 .order_history table tfoot .total a {
     display: block;
     float: right;
     padding: 7px 20px;
     color: white;
-    background: #5d5dff;
     border-radius: 2px;
     text-decoration: none;
 }
-
+.order_history table tfoot .total a {
+    background: #5d5dff;
+}
+.order_status table tfoot .total button {
+    outline: none;
+    border: none;
+    background-color: red;
+}
 .order_status table tbody tr:first-child td:first-child ,
 .order_history table tbody tr:first-child td:first-child {
     width: 1px;

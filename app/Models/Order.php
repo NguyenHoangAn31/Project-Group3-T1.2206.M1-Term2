@@ -10,10 +10,14 @@ class Order extends Model
     use HasFactory;
     protected $fillable = [
         'customer_id',
+        'name',
+        'email',
         'address',
+        'phone',
         'date',
         'status',
-        'discount',
+        'discount_value',
+        'transport_fee',
         'total',
     ];
     public function orderdetails()//foreign key

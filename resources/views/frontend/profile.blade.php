@@ -33,7 +33,7 @@
         <div class="check_order">
             <h2>Order tracking and order scheduling</h2>
             <p>Track and View Your Order History: Stay Up-to-Date with Your Purchases</p>
-            <a class="order_status" href="{{route('order_status')}}">Status Order</a>
+            <a class="order_status" href="{{route('order_status')}}">Orders in progress</a>
             <a class="order_history" href="{{route('order_history')}}">History Order</a>
         </div>
         <div class="profile_user">

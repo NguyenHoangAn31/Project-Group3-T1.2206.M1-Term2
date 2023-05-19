@@ -114,6 +114,7 @@ Route::prefix('frontend')->group(function () {
         Route::get('profile', [CustomerinterfaceController::class, 'profile'])->name('profile');
         Route::get('order_history', [CustomerinterfaceController::class, 'order_history'])->name('order_history');
         Route::get('order_status', [CustomerinterfaceController::class, 'order_status'])->name('order_status');
+        Route::delete('delete_order/{id_order}', [CustomerinterfaceController::class, 'delete_order'])->name('delete_order');
         Route::get('re_order/{order_id}', [CustomerinterfaceController::class, 're_order'])->name('re_order');
         Route::post('check_coupon', [CustomerinterfaceController::class, 'check_coupon'])->name('check_coupon');
         Route::get('checkout', [CustomerinterfaceController::class, 'checkout'])->name('checkout');

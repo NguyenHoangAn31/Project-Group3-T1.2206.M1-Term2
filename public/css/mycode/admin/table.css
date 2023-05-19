@@ -17,6 +17,7 @@
     border-collapse: collapse;
     margin: 20px 0;
     border:none;
+    font-size: 13px;
 }
 .main .layouttitle .body table td,
 .main .layouttitle .body table th

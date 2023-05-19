@@ -19,12 +19,13 @@
         <hr>
         <table border="1">
             <thead>
-                <td>id</td>
-                <td>order_id</td>
-                <td>category_id</td>
-                <td>product_id</td>
-                <td>quantity</td>
-                <td>price</td>
+                <td>Id</td>
+                <td>Order Id</td>
+                <td>Customer Id</td>
+                <td>Category Id</td>
+                <td>Product Id</td>
+                <td>Quantity</td>
+                <td>Price</td>
                 @if($order_status == 'processing')
                 <th>action</th>
                 @endif
@@ -34,6 +35,7 @@
                 <tr>
                     <td>{{$item->id}}</td>
                     <td>{{$item->order_id}}</td>
+                    <td>{{$item->orders->customer_id}}</td>
                     <td>{{$item->categories->name}}</td>
                     <td>{{$item->product_id}}</td>
                     <td>{{$item->quantity}}</td>

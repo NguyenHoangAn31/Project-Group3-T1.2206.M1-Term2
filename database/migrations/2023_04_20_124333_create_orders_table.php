@@ -14,10 +14,14 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('customer_id'); 
+            $table->string('name');
+            $table->string('email');
             $table->string('address');
+            $table->integer('phone');
             $table->dateTime('date');
             $table->string('status');
-            $table->string('discount');
+            $table->string('discount_value');
+            $table->string('transport_fee');
             $table->integer('total');
             $table->timestamps();
             $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade');

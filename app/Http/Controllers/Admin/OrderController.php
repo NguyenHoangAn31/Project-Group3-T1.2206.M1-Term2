@@ -18,7 +18,7 @@ class OrderController extends Controller
     public function index()
     {
         $auth = Auth::user();
-        $order = Order::all();
+        $order = Order::all()->reverse();
         return view('admin/order/index', compact('auth', 'order'));
     }
 

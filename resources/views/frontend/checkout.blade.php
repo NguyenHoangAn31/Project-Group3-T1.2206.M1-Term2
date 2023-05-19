@@ -235,7 +235,10 @@
             let province = $('#province option:selected').text();
             let district = $('#district option:selected').text();
             let ward = $('#ward option:selected').text();
+            let name = $('#name').val();
+            let email = $('#email').val();
             let address = $('#address').val();
+            let phone = $('#phone').val();
             let total = "{{$total}}";
             let discount_value = discount;
             let url = "{{route('place_order')}}";
@@ -246,7 +249,10 @@
                     province: province,
                     district: district,
                     ward: ward,
+                    name: name,
+                    email: email,
                     address: address,
+                    phone: phone,
                     total: total_price(total_order, fee, discount),
                     discount_value: coupon_value,
                     transport_fee: fee,

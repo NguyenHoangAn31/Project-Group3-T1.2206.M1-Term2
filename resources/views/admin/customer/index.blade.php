@@ -24,6 +24,7 @@
                 <td>Email</td>
                 <td>Phone</td>
                 <td>Address</td>
+                <td>Registration Method</td>
                 <th><a href="{{route('customer.create')}}" style="color:lime"><i class="fa-solid fa-plus"></i></a></th>
             </thead>
             <tbody>
@@ -35,6 +36,7 @@
                     <td>{{$item->email}}</td>
                     <td>{{$item->phone}}</td>
                     <td>{{$item->address}}</td>
+                    <td>{{$item->source}}</td>
                     <td class="action">
                         <form action="{{route('customer.destroy',$item->id)}}" method="post">
                             @csrf

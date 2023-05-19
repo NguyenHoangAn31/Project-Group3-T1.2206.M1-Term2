@@ -20,8 +20,10 @@
         <table border="1">
             <thead>
                 <td>ID</td>
-                <td>User_ID</td>
-                <td>Information</td>
+                <td>Image</td>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Phone</td>
                 <td>Address</td>
                 <td>Date</td>
                 <td>Status</td>
@@ -32,13 +34,13 @@
                 @foreach($order as $item)
                 <tr>
                     <td>{{$item->id}}</td>
-                    <td>{{$item->customer_id}}</td>
                     <td>
-                        <div class="information_user">
-                            <img src="{{asset($item->customers->image)}}" alt="" width="50" height="50" style="border-radius:50%">
-                            <p>{{$item->customers->name}}</p>
-                        </div>
+                        <img src="{{asset($item->customers->image)}}" alt="" width="50" height="50" style="border-radius:50%">
+                
                     </td>
+                    <td>{{$item->name}}</td>
+                    <td>{{$item->email}}</td>
+                    <td>{{$item->phone}}</td>
                     <td>{{$item->address}}</td>
                     <td>{{$item->date}}</td>
                     <td>

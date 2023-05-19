@@ -38,7 +38,7 @@
     <div class="option">
         <i class="fa-solid fa-xmark btn_close_option"></i>
 
-        <button class="accordion">Categories</button>
+        <button class="accordion">Products</button>
         <div class="panel">
             <a href="{{route('shop',1)}}">Apple iPhone ({{$count_iphone}})</a>
         </div>
