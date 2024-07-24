@@ -1,7 +1,7 @@
 @extends('admin/layout/layout')
-<link rel="stylesheet" href="{{asset('/css/mycode/admin/dashboard.css')}}">
 
 @section('mycss')
+<link rel="stylesheet" href="{{asset('/css/mycode/admin/dashboard.css')}}">
 @endsection
 @section('contents')
 <div class="wrapper">
