@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{asset('/css/mycode/frontend/about.css')}}">
     <link rel="stylesheet" href="{{asset('/css/mycode/frontend/aos.css')}}">
 
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
     <link rel="icon" type="image/x-icon" href="{{asset('images/myimg/OIP-removebg-preview.png')}}">
     <title>IShopApple</title>
