@@ -1,9 +1,10 @@
 @extends('admin/layout/layout')
+
+
+@section('mycss')
 <link rel="stylesheet" href="{{asset('/css/mycode/admin/table.css')}}">
 <link rel="stylesheet" href="{{asset('/css/mycode/admin/layouttitle.css')}}">
 <link rel="stylesheet" href="{{asset('/css/mycode/admin/order.css')}}">
-
-@section('mycss')
 @endsection
 
 @section('contents')
