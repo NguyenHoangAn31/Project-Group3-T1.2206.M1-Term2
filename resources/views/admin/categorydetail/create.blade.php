@@ -48,4 +48,4 @@
 
 @section('myjs')
 
-@end
+@endsection

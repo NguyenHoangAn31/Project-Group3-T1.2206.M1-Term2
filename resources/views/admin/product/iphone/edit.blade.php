@@ -94,4 +94,4 @@
 
 @section('myjs')
 
-@end
+@endsection

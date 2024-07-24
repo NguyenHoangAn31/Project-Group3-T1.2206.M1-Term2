@@ -3,7 +3,6 @@
 @section('mycss')
 <link rel="stylesheet" href="{{asset('/css/mycode/admin/layouttitle.css')}}">
 <link rel="stylesheet" href="{{asset('/css/mycode/admin/add_all_object.css')}}">
-
 @endsection
 
 @section('contents')
@@ -83,4 +82,4 @@
 
 @section('myjs')
 
-@end
+@endsection
