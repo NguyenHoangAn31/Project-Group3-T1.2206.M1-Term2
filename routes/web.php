@@ -127,4 +127,4 @@ Route::prefix('frontend')->group(function () {
     });
 });
 Route::get('/auth/google/redirect', [CustomerinterfaceController::class, 'google_redirect'])->name('login_google');
-Route::get('/auth/google/callback', [CustomerinterfaceController::class, 'google_callback']);
+Route::get('/auth/google/call-back', [CustomerinterfaceController::class, 'google_callback']);
